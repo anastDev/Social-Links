@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+* {
+  font-size: 14px;
+  --primary-color: hsl(75, 94%, 57%);
+  --text-color: hsl(0, 0%, 100%);
+  --text-color--transparent: hsla(0, 0%, 100%, 0.7);
+  --background-color: hsl(0, 0%, 8%);
+  --card-color: hsl(0, 0%, 12%);
+  --secondary-card-color: hsl(0, 0%, 20%);
+  --attribution-color: hsl(228, 45%, 44%);
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border: none;
+  width: 50vh;
+  height: 80vh;
+  background-color: var(--card-color);
+  padding: 2rem 3rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-img-top {
+  width: 12vh;
+  height: 12vh;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card-title {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  margin-top: 1.4rem;
+}
+
+.tag-location {
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card-body {
+  color: var(--text-color--transparent);
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  margin:0;
+}
+
+.tag-social-link {
+  color: var(--text-color);
+  background-color: var(--secondary-card-color);
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.tag-social-link:hover,
+.tag-social-link:focus {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  cursor: pointer;
+}
+
+.attribution {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.attribution a {
+  color: var(--attribution-color);
+  text-decoration: underline;
+}
+
+
+@media (max-width:375px) {
+  .card {
+    width: 50vh;
+    padding: 1rem 2rem;
+    height: auto;
+  }
+
+  .card-img-top {
+    width: 10vh;
+    height: 10vh;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+  }
+
+  .tag-location {
+    font-size: 0.80rem;
+  }
+
+  .card-body {
+    padding: 0 1rem 1rem 1rem;
+    font-size: 0.80rem;
+  }
+
+  .tag-social-link {
+    font-size: 0.80rem;
+  }
+
+  .attribution ,.attribution a {
+    font-size: 0.80rem;
+  }
+}
