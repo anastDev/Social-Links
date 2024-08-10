@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://github.com/anastDev/Social-Links)
+- [Live Site URL](https://anastdev.github.io/Social-Links/)
 
 ## My process
 
