@@ -63,11 +63,9 @@ body {
 .card-body {
   color: var(--text-color--transparent);
   display: flex;
-  justify-content: center;
-  padding: 1rem;
+  align-items: center;
   font-weight: 400;
   font-size: 1rem;
-  margin:0;
 }
 
 .tag-social-link {
@@ -100,8 +98,7 @@ body {
   text-decoration: underline;
 }
 
-
-@media (max-width:375px) {
+@media (max-width: 375px) {
   .card {
     width: 50vh;
     padding: 1rem 2rem;
@@ -118,19 +115,20 @@ body {
   }
 
   .tag-location {
-    font-size: 0.80rem;
+    font-size: 0.8rem;
   }
 
   .card-body {
     padding: 0 1rem 1rem 1rem;
-    font-size: 0.80rem;
+    font-size: 0.8rem;
   }
 
   .tag-social-link {
-    font-size: 0.80rem;
+    font-size: 0.8rem;
   }
 
-  .attribution ,.attribution a {
-    font-size: 0.80rem;
+  .attribution,
+  .attribution a {
+    font-size: 0.8rem;
   }
 }
